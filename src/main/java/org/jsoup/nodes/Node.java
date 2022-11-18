@@ -689,7 +689,7 @@ public abstract class Node implements Cloneable {
         return StringUtil.releaseBuilder(accum);
     }
 
-    protected void outerHtml(Appendable accum) {
+    public void outerHtml(Appendable accum) {
         NodeTraversor.traverse(new OuterHtmlVisitor(accum, NodeUtils.outputSettings(this)), this);
     }
 
