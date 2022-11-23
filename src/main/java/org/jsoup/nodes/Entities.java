@@ -208,7 +208,7 @@ public class Entities {
                         if (escapeMode != EscapeMode.xhtml)
                             accum.append("&nbsp;");
                         else
-                            accum.append("&#xa0;");
+                            accum.append(c);
                         break;
                     case '<':
                         // escape when in character data or when in a xml attribute val or XML syntax; not needed in html attr val
